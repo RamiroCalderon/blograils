@@ -3,6 +3,10 @@
 <p><%= @article.body %></p>
 
 
+
 <ul>
   <li><%= link_to "cambiale", edit_article_path(@article) %></li>
+  <li><%= link_to "mandalo a chi....", article_path(@article),
+                  method: :delete,
+                  data: { confirm: "neta?" } %></li>
 </ul>
